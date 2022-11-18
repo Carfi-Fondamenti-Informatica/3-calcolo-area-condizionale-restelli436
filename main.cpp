@@ -1,32 +1,35 @@
+
+
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    float a, b, z;
+    float a, b;
+    cin>>a;
+    cin>>b;
 
-    int c;
+    int opzione=0;
 
-    cin >> a >> b >> c;
-    if (c == 0) {
-        z = (a * b) / 2;
-        cout << z << endl;
+    cin>>opzione;
 
+    switch (opzione) {
+        case 0: cout<<((a*b)/2);
+        break;
 
-    }else if (c == 1) {
-        z = (a * a);
-        cout << z << endl;
+        case 1:cout<<(a*a);
+        break;
 
+        case 2: cout<<(a*b);
+        break;
 
-    }else if (c == 2) {
-        z = (a * b);
-        cout << z << endl;
-
-    }else if (c!=2 || c!=1 || c!=0) {
-
-        cout << "opzione non valida" << endl;
-        
-
-        return 0;
+        default:
+            cout<<"opzione non valida";
+            
     }
+
+
+
+
+    return 0;
 }
