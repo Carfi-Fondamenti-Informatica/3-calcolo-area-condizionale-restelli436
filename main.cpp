@@ -23,7 +23,9 @@ int main() {
         cout << z << endl;
 
     }else if (c!=2 || c!=1 || c!=0) {
-        cout << "operazione non valida" << endl;
+
+        cout << "opzione non valida" << endl;
+        
 
         return 0;
     }
