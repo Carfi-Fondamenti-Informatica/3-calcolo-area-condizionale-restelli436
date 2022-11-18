@@ -22,7 +22,7 @@ int main() {
         z = (a * b);
         cout << z << endl;
 
-    }else if (c!=2, c!=1, c!=0) {
+    }else if (c!=2 || c!=1 || c!=0) {
         cout << "operazione non valida" << endl;
 
         return 0;
